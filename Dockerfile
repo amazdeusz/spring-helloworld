@@ -9,4 +9,4 @@ WORKDIR /app
 ARG JAR=hello-0.0.1-SNAPSHOT.jar
 
 COPY --from=BUILD /src/target/$JAR /app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"] 
